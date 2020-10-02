@@ -1,0 +1,160 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-gray: #eeeeee;
+  --basic-red: #fb565a;
+  --basic-green: #00ca74;
+  --basic-yellow: #efc84a;
+
+  --special-red--hover: #e74246;
+  --special-red--active: #d7373b;
+  --special-green--hover: #00bc6c;
+  --special-green--active: #00aa62;
+  --special-yellow--hover: #eab534;
+  --special-yellow--active: #e5a722;
+  --special-gray--hover: #dfdfdf;
+  --special-gray--active: #d5d5d5;
+}
+
+
+/* Global */
+
+body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.page a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Main navigation*/
+
+.main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-gray);
+  background-color: #eeeeee;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-gray);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+/* User navigation */
+
+.main-header-logo:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: var(--special-red--hover);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Slider */
+
+.slider {
+  list-style: none;
+  text-align: center;
+}
+
+.slider h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.button:hover {
+  background-color: var(--special-red--hover);
+}
+
+.button:active {
+  background-color: var(--special-red--active);
+}
+
+/* Service-list */
+.service {
+  list-style: none;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Information */
+
+.information {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.information-text p {
+  font-size: 16px;
+  line-height: 80px;
+}
+

@@ -1,125 +1,144 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-<header>
-  <a>
-    <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип Nёrd's">
-  </a>
-  <nav>
-    <ul>
-      <li><a href="blank.html">студия</a></li>
-      <li><a href="blank.html">клиенты</a></li>
-      <li><a href="catalog.html">магазин</a></li>
-      <li><a href="blank.html">контакты</a></li>
-    </ul>
-    <a href="blank.html">Корзина</a>
+
+<body class="page-body">
+
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header-logo" href="#">
+      <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип Nёrd's">
+    </a>
+    <div class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="site-navigation">
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="basket-link" href="#">Корзина</a>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
-<main>
-  <section>
+<main class="container">
+  <section class="slider">
     <div>
       <h1>Долго, дорого,<br> скрупулезно.</h1>
       <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-      <a href="blank.html">узнать больше</a>
+      <a class="button" href="blank.html">Узнать больше</a>
       <figure>
-        <img src="img/nerds-index-slide1 1.png" width="760" height="431">
+        <img src="img/nerds-index-slide1.png" width="760" height="431">
       </figure>
     </div>
   </section>
-  <section>
+  <section class="container">
     <div>
-      <ul>
-        <li>
+      <ul class="service-list">
+        <li class="service">
           <figure>
-            <img src="img/illustration-1 1.png" width="300" height="146">
+            <img src="img/illustration-1.png" width="300" height="146">
           </figure>
-          <h1>веб-сайты</h1>
+          <h2>Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="blank.html">заказать</a>
+          <a class="button" href="blank.html">Заказать</a>
         </li>
       </ul>
     </div>
     <div>
       <ul>
-        <li>
+        <li class="service">
           <figure>
-            <img src="img/illustration-2 1.png" width="300" height="146">
+            <img src="img/illustration-2.png" width="300" height="146">
           </figure>
-          <h1>приложения</h1>
+          <h2>Приложения</h2>
           <p>Покорите том-10 приложений в AppStore и Google Play</p>
-          <a href="blank.html">заказать</a>
+          <a class="button" href="blank.html">Заказать</a>
         </li>
       </ul>
     </div>
     <div>
       <ul>
-        <li>
+        <li class="service">
           <figure>
-            <img src="img/illustration-3 1.png" width="300" height="146">
+            <img src="img/illustration-3.png" width="300" height="146">
           </figure>
-          <h1>презентации</h1>
+          <h2>Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a href="blank.html">заказать</a>
+          <a class="button" href="blank.html">Заказать</a>
         </li>
       </ul>
     </div>
   </section>
-  <section>
-    <div>
-      <h2>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
-      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не
+  <section class="information">
+    <div class="information-list">
+      <h2 class="information-item">Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
+      <p class="information-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше
+        креатива. Работаем не
         покладая рук, как роботы.</p>
-      <h2>выполняем заказы на разработку:</h2>
-      <ul>
+      <h2 class="information-left">Выполняем заказы на разработку:</h2>
+      <ul class="list-left">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильны приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
     </div>
-    <div>
+    <div class="information-right">
       <figure>
-        <img src="img/nerds-illustration 1.png" width="360" height="208">
+        <img src="img/nerds-illustration1.png" width="360" height="208">
       </figure>
-      <h2>с 2004 года любим точность во всем:</h2>
+      <h2 class="list-left">С 2004 года любим точность во всем:</h2>
       <table>
         <tr>
-          <td>146%</td>
-          <td>100%</td>
-          <td>50%</td>
+          <td class="interest">146
+            <sup>%</sup>
+          </td>
+          <td class="interest">100
+            <sup>%</sup>
+          </td>
+          <td class="interest">50
+            <sup>%</sup>
+          </td>
         </tr>
         <tr>
-          <td>Уровень<br> Самоотдачи</td>
-          <td>Соблюдение<br> сроков</td>
-          <td>Минимальная<br> предоплата</td>
+          <td class="details">Уровень<br> Самоотдачи</td>
+          <td class="details">Соблюдение<br> сроков</td>
+          <td class="details">Минимальная<br> предоплата</td>
         </tr>
       </table>
     </div>
   </section>
 
 </main>
-<footer class="main-footer">
-  <section>
+<footer class="page-footer main-footer">
+  <section class="footer-contact">
     <figure>
-      <img src="img/map 1.png" width="1440" height="416">
+      <img src="img/map1.png" width="1440" height="416">
     </figure>
     <div>
       <h3>nёrds desing studio</h3>
       <p>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br>
-        тел. <a href="tel:+78122757575">+7 (812) 275 75 75</a>
+        тел. <a class="contacts-phone" href="tel:+78122757575">+7 (812) 275 75 75</a>
       </p>
-      <a href="blank.html">напишите нам</a>
+      <a class="button" href="blank.html">Напишите нам</a>
     </div>
     <figure>
-      <img src="img/map-marker 1.png" width="231" height="190">
+      <img src="img/map-marker1.png" width="231" height="190">
     </figure>
     <div>
-      <h3>Давайте дружить, это выгодно!</h3>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <h3 class="information-item">Давайте дружить, это выгодно!</h3>
+      <p class="information-text">Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </section>
 </footer>
