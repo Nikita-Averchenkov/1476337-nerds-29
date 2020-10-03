@@ -7,6 +7,8 @@
   --basic-red: #fb565a;
   --basic-green: #00ca74;
   --basic-yellow: #efc84a;
+  --basic-extra-gray: #666666;
+  --basic-extra-black: #444444;
 
   --special-red--hover: #e74246;
   --special-red--active: #d7373b;
@@ -49,6 +51,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
+  align-items: center;
   text-transform: uppercase;
   color: var(--basic-gray);
   background-color: #eeeeee;
@@ -89,11 +92,13 @@ img {
   opacity: 0.3;
 }
 
+/* main-header */
+
 /* Slider */
 
 .slider {
   list-style: none;
-  text-align: center;
+  align-items: center;
 }
 
 .slider h1 {
@@ -111,7 +116,7 @@ img {
 
 .button {
   font: inherit;
-  text-align: center;
+  align-items: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: uppercase;
@@ -132,7 +137,7 @@ img {
 /* Service-list */
 .service {
   list-style: none;
-  text-align: center;
+  align-items: center;
 }
 
 .service h2 {
@@ -146,15 +151,86 @@ img {
   line-height: 24px;
 }
 
-/* Information */
+/* Advantages */
 
-.information {
+.advantages {
   list-style: none;
+  align-items: center;
+}
+
+.advantages h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  align-items: center;
+}
+
+.advantages p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantages h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
-.information-text p {
+.advantages-list {
+  list-style: none;
   font-size: 16px;
-  line-height: 80px;
+  line-height: 24px;
 }
 
+/* Feature */
+
+.feature {
+  list-style: none;
+  text-align: center;
+}
+
+.feature strong {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.interest {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.property {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+}
+
+/* Main footer */
+
+.footer-contact {
+  list-style: none;
+  align-items: center;
+}
+
+.footer-contact h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-extra-gray);
+}
+
+.footer-friends {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
