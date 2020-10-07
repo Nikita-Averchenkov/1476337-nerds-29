@@ -1,136 +1,143 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Каталог HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-<header>
-  <a>
-    <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип Nёrd's">
-  </a>
+
+<body class="page-body">
+
+<header class="main-header">
   <nav>
-    <ul>
-      <li><a href="blank.html">СТУДИЯ</a></li>
-      <li><a href="blank.html">КЛИЕНТЫ</a></li>
-      <li><a href="catalog.html">МАГАЗИН</a></li>
-      <li><a href="blank.html">КОНТАКТЫ</a></li>
-    </ul>
-    <a href="blank.html">Корзина</a>
+    <a class="main-header-logo" href="#">
+      <img src="img/nerds-logo.png" width="160" height="66" alt="Логотип Nёrd's">
+    </a>
+    <div>
+      <div class="container">
+        <ul class="site-navigation">
+          <li><a href="index.html">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a class="active" href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="basket-link" href="#">Корзина</a>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
 
-<main>
-  <section>
-    <h1>магазин готовых шаблонов</h1>
-  </section>
-  <section>
-    <div>
-      <p>стоимость:</p>
-      <h2>Фильтр Стоимости</h2>
-      <!-- Здесь будет форма фильтра -->
+<main class="container">
+
+  <section class="catalog">
+    <h1 class="poster">Магазин готовых шаблонов</h1>
+    <div class="filters">
+      <div class="filters-item">
+        <p>стоимость:</p>
+        <h2 class="visually-hidden">Фильтр Стоимости</h2>
+        <!-- Здесь будет форма фильтра -->
+      </div>
+      <div class="filters-item">
+        <p>сетка:</p>
+        <h2 class="visually-hidden">Фильтр Сетки</h2>
+        <!-- Здесь будет форма фильтра -->
+      </div>
+      <div class="filters-item">
+        <p>особенности:</p>
+        <h2 class="visually-hidden">Фильтр Сетки</h2>
+        <!-- Здесь будет форма фильтра -->
+        <a class="button-show" href="#">Показать</a>
+      </div>
     </div>
-    <div>
-      <p>сетка:</p>
-      <h2>Фильтр Сетки</h2>
-      <!-- Здесь будет форма фильтра -->
-    </div>
-    <div>
-      <p>особенности:</p>
-      <h2>Фильтр Сетки</h2>
-      <!-- Здесь будет форма фильтра -->
-      <a href="blank.html">Показать</a>
-    </div>
-  </section>
-  <section>
-    <div>
-      <ul>
-        <li>сортировать:</li>
-        <li>по цене</li>
-        <li>по типу</li>
-        <li>по названию</li>
+    <div class="result">
+    <div class="sort">
+      <p>сортировать:</p>
+      <ul class="sort-list no-list">
+        <li><a class="button-sort" href="#">по цене</a></li>
+        <li><a class="button-item" href="#"> по типу</a></li>
+        <li><a class="button-item" href="#">по названию</a></li>
       </ul>
     </div>
-    <h2>Список Магазинов</h2>
+    <h2 class="visually-hidden">Список Магазинов</h2>
     <div>
-      <ul>
-        <li>
+      <ul class="no-list">
+        <li class="sedona">
           <figure>
             <img src="img/img-sedona1.png" width="360" height="576" alt="SEDONA">
           </figure>
-          <a href="product.html">
-            <h2>SEDONA</h2>
+          <a class="button-sedona" href="#">
+            <h2>sedona</h2>
           </a>
-          <p>Информационный сайт для туристов</p>
-          <a href="blank.html">9 990 ₽</a>
+          <p class="sedona-list">Информационный сайт для туристов</p>
+          <a class="button" href="blank.html">9 990 ₽</a>
         </li>
-        <li>
+        <li class="pink">
           <figure>
             <img src="img/img-pink1.png" width="358" height="576">
           </figure>
         </li>
-        <li>
+        <li class="barbershop">
           <figure>
             <img src="img/img-barbershop1.png" width="358" height="578">
           </figure>
         </li>
-        <li>
+        <li class="mishka">
           <figure>
             <img src="img/img-mishka1.png" width="358" height="578">
           </figure>
         </li>
-        <li>
+        <li class="aplus">
           <figure>
             <img src="img/img-aplus1.png" width="358" height="578">
           </figure>
         </li>
-        <li>
+        <li class="kvast">
           <figure>
             <img src="img/img-kvast1.png" width="358" height="578">
           </figure>
         </li>
       </ul>
     </div>
-    <div>
-      <ul>
-        <li>
-          <a>1</a>
-        </li>
-        <li>
-          <a href="#">2</a>
-        </li>
-        <li>
-          <a href="#">3</a>
-        </li>
-        <li>
-          <a href="blank.html">следующая</a>
-        </li>
+    <div class="pagination-list">
+      <ul class="no-list">
+        <li><a class="pagination-item pagination-item-current">1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li><a class="button-pagination" href="#">следующая</a></li>
       </ul>
+    </div>
     </div>
   </section>
 </main>
 
-<footer class="main-footer">
-  <section>
+<footer class="page-footer main-footer">
+  <div class="container">
     <figure>
       <img src="img/map1.png" width="1440" height="416">
     </figure>
-    <div>
-      <h3>nёrds desing studio</h3>
-      <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8<br>
-        тел. <a href="tel:+78122757575">+7 (812) 275 75 75</a>
-      </p>
-      <a href="blank.html">напишите нам</a>
-    </div>
-    <figure>
-      <img src="img/map-marker1.png" width="231" height="190">
-    </figure>
-    <div>
-      <h3>Давайте дружить, это выгодно!</h3>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </section>
+    <section class="footer-contact">
+      <div>
+        <h3>nёrds desing studio</h3>
+        <p>191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          <span> тел. +7 (812) 275-75-75 </span>
+        </p>
+        <a class="button" href="blank.html">Напишите нам</a>
+      </div>
+      <figure>
+        <img src="img/map-marker1.png" width="231" height="190">
+      </figure>
+      <div>
+        <h3 class="footer-friends"> Давайте дружить, это выгодно! </h3>
+        <span> Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+    </section>
+  </div>
 </footer>
 </body>
 </html>

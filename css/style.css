@@ -9,6 +9,7 @@
   --basic-yellow: #efc84a;
   --basic-extra-gray: #666666;
   --basic-extra-black: #444444;
+  --basic-extra-white: #DBDBDB;
 
   --special-red--hover: #e74246;
   --special-red--active: #d7373b;
@@ -18,13 +19,13 @@
   --special-yellow--active: #e5a722;
   --special-gray--hover: #dfdfdf;
   --special-gray--active: #d5d5d5;
+
 }
 
 
 /* Global */
 
 body {
-  min-width: 1440px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -47,7 +48,7 @@ img {
 
 /*Main navigation*/
 
-.main-navigation {
+.main-header {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -57,9 +58,6 @@ img {
   background-color: #eeeeee;
 }
 
-.main-navigation-wrapper {
-  background-color: var(--basic-gray);
-}
 
 .site-navigation {
   list-style: none;
@@ -92,7 +90,14 @@ img {
   opacity: 0.3;
 }
 
-/* main-header */
+.Poster {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+/* main */
 
 /* Slider */
 
@@ -132,6 +137,83 @@ img {
 
 .button:active {
   background-color: var(--special-red--active);
+}
+
+.button-show {
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.button-show:hover {
+  background-color: var(--special-gray--hover);
+}
+
+.button-show:active {
+  background-color: var(--special-gray--active);
+}
+
+.button-sort {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.button-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.button-sedona {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.button-sedona:hover {
+  color: var(--basic-red);
+}
+
+.button-sedona:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+  mix-blend-mode: normal;
+}
+
+.button-pagination {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.button-pagination:hover {
+  background-color: var(--special-gray--hover);
+}
+
+.button-pagination:active{
+  background-color: var(--special-gray--active);
 }
 
 /* Service-list */
@@ -208,6 +290,90 @@ img {
   font-size: 16px;
   line-height: 18px;
   align-items: center;
+}
+
+/* Catalog main */
+
+.no-list {
+  list-style: none;
+}
+
+.poster {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  align-items: center;
+  color: var(--basic-black);
+}
+
+.filters-item {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.sort {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.sort-list {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+
+}
+
+.sedona-list {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+  color: var(--basic-extra-gray);
+}
+
+/* Pagination */
+
+.pagination-item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.pagination-item a:hover {
+  background-color: var(--special-gray--hover);
+}
+
+.pagination-item a:active {
+  background-color: var(--special-gray--active);
+}
+
+.pagination-item-current {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background: rgba(0, 0, 0, 0.0001);
+  border: 3px solid #DBDBDB;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 /* Main footer */
