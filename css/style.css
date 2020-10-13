@@ -26,7 +26,6 @@
 /* Global */
 
 body {
-  min-width: 1160px;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -63,34 +62,57 @@ img {
 /*Main navigation*/
 
 .main-header {
+  margin: 0;
+  background-color: var(--basic-gray);
+}
+
+.main-navigation {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  margin-bottom: 9px;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+
+.site-navigation li {
+  margin: 0 20px;
+}
+
+.site-navigation a {
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-gray);
-  background-color: #eeeeee;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 9px;
 }
 
 .site-navigation-current a:not([href]) {
   background-color: var(--basic-black);
 }
 
+.user-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-gray);
+
+}
 
 /* Logo */
 
 .main-header-logo {
+  display: flex;
   width: 160px;
   height: 65px;
-  padding-top: 49px;
-  margin-left: 140px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
 }
@@ -99,32 +121,17 @@ img {
 /*Container*/
 
 .container {
-  width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
+  width: 1160px;
 }
 
-.main-navigation-wrapper {
+.main-header .container {
   display: flex;
-  justify-content: space-between;
 }
 
 /*Site-navigation*/
 
-.site-navigation {
-  width: 437px;
-  padding-top: 75px;
-  margin-left: 502px;
-  min-height: 30px;
-  list-style: none;
-}
-
-/* User navigation */
-
-.user-navigation {
-  max-width: 100px;
-  padding-left: 25px;
-}
 
 .main-header-logo:active {
   color: var(--basic-black);
@@ -160,34 +167,127 @@ img {
 /* Slider */
 
 .slider {
-  list-style: none;
-  align-items: center;
-  margin-bottom: 80px;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  background-color: var(--basic-gray);
+  outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
 .about-us h1 {
-  width: 538px;
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
 .about-us p {
-  width: 400px;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 80px;
-  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  outline: 5px solid rgba(255, 0, 0, 0.3);
 }
 
 .about-us {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 80px;
 
 }
 
+/* Service-list */
+
+.service {
+  margin-bottom: 80px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.service figure {
+  margin: 0;
+}
+
+.service h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.service p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* Company */
+
+.company {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advantages {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.advantages-list {
+  list-style: none;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantages h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.advantages p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.advantages h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+
+
+/* Feature */
+
+.feature {
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.feature strong {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.interest {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  text-transform: uppercase;
+}
+
+.property {
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+}
 
 
 /* Button */
@@ -291,107 +391,14 @@ img {
   background-color: var(--special-gray--active);
 }
 
-/* Service-list */
 
-.service-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-  align-items: center;
-  width: 1100px;
-  height: 346px;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.service {
-
-  list-style: none;
-  align-items: center;
-}
-
-.service h2 {
-  margin: 0;
-  margin-bottom: 16px;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.service p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/* Advantages */
-
-.advantages {
-  display: flex;
-
-  list-style: none;
-  align-items: center;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.advantages h2 {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 45px;
-  align-items: center;
-}
-
-.advantages p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.advantages h3 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.advantages-list {
-  list-style: none;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-/* Feature */
-
-.feature {
-  list-style: none;
-  text-align: center;
-  outline: 5px solid rgba(0, 255, 255, 0.7);
-  outline-offset: -5px;
-}
-
-.feature strong {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.interest {
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
-  text-transform: uppercase;
-}
-
-.property {
-  font-size: 16px;
-  line-height: 18px;
-  align-items: center;
-}
 
 /* Catalog main */
 
 .no-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .poster {
@@ -474,9 +481,29 @@ img {
 
 /* Main footer */
 
+.main-footer {
+  margin-top: 80px;
+  width: 100%;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+}
+
+.map {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.map .container {
+  min-height: 230px;
+  padding-top: 55px;
+  z-index: 2;
+}
+
 .footer-contact {
-  list-style: none;
-  align-items: center;
+  width: 319px;
+  height: 308px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .footer-contact h3 {
@@ -491,8 +518,15 @@ img {
   color: var(--basic-extra-gray);
 }
 
+.marker-1 {
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
 .footer-friends {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
