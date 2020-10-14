@@ -13,43 +13,43 @@
 
 <header class="main-header">
   <div class="container">
-    <nav>
-      <a class="main-header-logo" href="#">
-        <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип Nёrd's">
-      </a>
-      <div class="main-navigation-wrapper">
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <div class="user-navigation">
-          <a class="basket-link" href="#">Корзина</a>
-        </div>
+    <a class="main-header-logo" href="#">
+      <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип Nёrd's">
+    </a>
+    <nav class="main-navigation">
+      <ul class="site-navigation no-list">
+        <li><a href="index.html">Студия</a></li>
+        <li><a href="#">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a class="basket-link" href="#">Корзина</a>
       </div>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <h1 class="poster">Магазин готовых шаблонов</h1>
   <section class="catalog">
+    <h1 class="poster">Магазин готовых шаблонов</h1>
     <div class="filters">
-      <div class="filters-item">
+      <div class="filters-cost">
         <p>стоимость:</p>
         <h2 class="visually-hidden">Фильтр Стоимости</h2>
         <!-- Здесь будет форма фильтра -->
       </div>
-      <div class="filters-item">
+      <div class="filters-adaptive">
         <p>сетка:</p>
         <h2 class="visually-hidden">Фильтр Сетки</h2>
         <!-- Здесь будет форма фильтра -->
       </div>
-      <div class="filters-item">
+      <div class="filters-features">
         <p>особенности:</p>
         <h2 class="visually-hidden">Фильтр Сетки</h2>
         <!-- Здесь будет форма фильтра -->
+      </div>
+      <div>
         <a class="button-show" href="#">Показать</a>
       </div>
     </div>
@@ -63,7 +63,7 @@
         </ul>
       </div>
       <h2 class="visually-hidden">Список Магазинов</h2>
-      <ul class="no-list">
+      <ul class="shop no-list">
         <li class="sedona">
           <figure>
             <img src="img/img-sedona1.png" width="360" height="576" alt="SEDONA">
@@ -71,8 +71,10 @@
           <a class="button-sedona" href="#">
             <h2>sedona</h2>
           </a>
-          <p class="sedona-list">Информационный сайт для туристов</p>
-          <a class="button" href="blank.html">9 990 ₽</a>
+          <div class="block">
+            <p class="sedona-list">Информационный сайт для туристов</p>
+            <a class="button" href="blank.html">9 990 ₽</a>
+          </div>
         </li>
         <li class="pink">
           <figure>
@@ -100,7 +102,7 @@
           </figure>
         </li>
       </ul>
-      <ul class="no-list">
+      <ul class="pagination no-list">
         <li><a class="pagination-item pagination-item-current">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
@@ -112,7 +114,7 @@
 
 <footer class="page-footer main-footer">
   <div class="container">
-    <figure>
+    <figure class="map no-list">
       <img src="img/map1.png" width="1440" height="416">
     </figure>
     <section class="footer-contact">
@@ -124,14 +126,16 @@
         </p>
         <a class="button" href="blank.html">Напишите нам</a>
       </div>
-      <figure>
-        <img src="img/map-marker1.png" width="231" height="190">
-      </figure>
       <div>
-        <h3 class="footer-friends"> Давайте дружить, это выгодно! </h3>
-        <span> Скидка 10% для друзей из социальных сетей.</span>
+        <figure class="marker-1 no-list">
+          <img src="img/map-marker1.png" width="231" height="190">
+        </figure>
       </div>
     </section>
+    <div class="footer-friends">
+      <h3> Давайте дружить, это выгодно! </h3>
+      <a>Скидка 10% для друзей из социальных сетей.</a>
+    </div>
   </div>
 </footer>
 </body>
