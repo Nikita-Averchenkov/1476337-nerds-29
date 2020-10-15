@@ -60,9 +60,10 @@ img {
 }
 
 .catalog {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  align-content: start;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1160px;
 }
 
 .catalog .poster {
@@ -132,7 +133,6 @@ img {
   outline-offset: -5px;
 }
 
-
 /*Container*/
 
 .container {
@@ -184,6 +184,7 @@ img {
 
 .slider {
   display: flex;
+  justify-content: center;
   margin-bottom: 80px;
   background-color: var(--basic-gray);
   outline: 5px solid rgba(255, 0, 0, 0.3);
@@ -200,13 +201,6 @@ img {
   font-size: 16px;
   line-height: 24px;
   outline: 5px solid rgba(255, 0, 0, 0.3);
-}
-
-.about-us {
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 80px;
-
 }
 
 /* Service-list */
@@ -426,9 +420,6 @@ img {
 
 
 .footer-contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   outline: 5px solid rgba(0, 255, 255, 0.7);
   outline-offset: -5px;
 }
@@ -451,6 +442,9 @@ img {
 }
 
 .footer-friends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 }
@@ -481,6 +475,8 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
+  margin: 0;
+  height: 355px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
 }
@@ -585,7 +581,6 @@ text-transform: uppercase;
   background-color: var(--special-gray--active);
 }
 
-.pagination-item-current {
 .pagination-item-current {
   font-weight: 500;
   font-size: 16px;
