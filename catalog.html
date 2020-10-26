@@ -20,7 +20,7 @@
       <ul class="site-navigation no-list">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a class="active" href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
       <div class="user-navigation">
@@ -38,17 +38,83 @@
       <div class="filters-cost">
         <p>стоимость:</p>
         <h2 class="visually-hidden">Фильтр Стоимости</h2>
-        <!-- Здесь будет форма фильтра -->
-      </div>
-      <div class="filters-adaptive">
+        <div class="filter">
+          <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="text" name="max-price" value="15 000">
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      <div class="filters-adaptiv">
         <p>сетка:</p>
         <h2 class="visually-hidden">Фильтр Сетки</h2>
-        <!-- Здесь будет форма фильтра -->
+        <fieldset class="filter-grid">
+          <legend>Сетка:</legend>
+          <ul class="no-list">
+            <li class="filter-option">
+              <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-adaptive"
+                     checked>
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-grid-checkbox" type="checkbox" name="grid" id="filter-flexible">
+              <label for="filter-flexible">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
       </div>
       <div class="filters-features">
         <p>особенности:</p>
         <h2 class="visually-hidden">Фильтр Сетки</h2>
-        <!-- Здесь будет форма фильтра -->
+        <fieldset class="filter-features">
+          <legend>Особенности:</legend>
+
+          <ul class="no-list">
+            <li class="filter-option">
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="slider"
+                     checked>
+              <label for="slider">Слайдер</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="advantages">
+              <label for="advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="news"
+                     checked>
+              <label for="news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="galery">
+              <label for="galery">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="basket">
+              <label for="basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
       </div>
       <div>
         <a class="button-show" href="#">Показать</a>
@@ -59,13 +125,20 @@
         <p>сортировать:</p>
         <ul class="sort-list no-list">
           <li><a class="button-sort" href="#">по цене</a></li>
-          <li><a class="button-item" href="#"> по типу</a></li>
-          <li><a class="button-item" href="#">по названию</a></li>
+          <li><a class="button-item1" href="#"> по типу</a></li>
+          <li><a class="button-item2" href="#">по названию</a></li>
+          <li><a class="button-down" href="#"></a></li>
+          <li><a class="button-up" href="#"></a></li>
         </ul>
       </div>
       <h2 class="visually-hidden">Список Магазинов</h2>
       <ul class="shop no-list">
         <li class="sedona">
+          <svg version="1.1" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+										<path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+									</svg>
           <figure class="no-list">
             <img src="img/img-sedona1.png" width="360" height="576" alt="SEDONA">
           </figure>
@@ -78,26 +151,51 @@
           </div>
         </li>
         <li class="pink">
+          <svg version="1.1" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+										<path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+									</svg>
           <figure class="no-list">
             <img src="img/img-pink1.png" width="358" height="576">
           </figure>
         </li>
         <li class="barbershop">
+          <svg version="1.1" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+										<path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+									</svg>
           <figure class="no-list">
             <img src="img/img-barbershop1.png" width="358" height="578">
           </figure>
         </li>
         <li class="mishka">
+          <svg version="1.1" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+										<path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+									</svg>
           <figure class="no-list">
             <img src="img/img-mishka1.png" width="358" height="578">
           </figure>
         </li>
         <li class="aplus">
+          <svg version="1.1" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+										<path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+									</svg>
           <figure class="no-list">
             <img src="img/img-aplus1.png" width="358" height="578">
           </figure>
         </li>
         <li class="kvast">
+          <svg version="1.1" x="0px" y="0px" width="360px" height="40px" viewBox="0 0 360 40" enable-background="new 0 0 360 40" xml:space="preserve">
+										<path fill="#4D4D4D" d="M356,0H4C1.8,0,0,1.8,0,4v16v20h360V4C360,1.8,358.2,0,356,0z M22.991,27c-3.866,0-7-3.134-7-7s3.134-7,7-7
+										s7,3.134,7,7S26.857,27,22.991,27z M46.002,27c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S49.868,27,46.002,27z M69.013,27
+										c-3.866,0-7-3.134-7-7s3.134-7,7-7s7,3.134,7,7S72.879,27,69.013,27z"></path>
+									</svg>
           <figure class="no-list">
             <img src="img/img-kvast1.png" width="358" height="578">
           </figure>
@@ -109,6 +207,7 @@
         <li class="pagination-item"><a href="#">3</a></li>
         <li><a class="button-pagination" href="#">следующая</a></li>
       </ul>
+    </div>
     </div>
   </section>
   </div>
