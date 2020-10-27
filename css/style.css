@@ -68,6 +68,10 @@ img {
   align-content: start;
 }
 
+.catalog {
+  display: flex;
+}
+
 .catalog .poster {
   grid-column: 1 / -1;
 }
@@ -76,6 +80,7 @@ img {
   grid-column: 1 / -1;
   margin-bottom: 60px;
 }
+
 
 /*Main navigation*/
 
@@ -892,10 +897,6 @@ margin-bottom: 37px;
   padding: 0;
 }
 
-.catalog {
-  display: flex;
-
-}
 
 .poster {
   display: flex;
@@ -910,10 +911,7 @@ margin-bottom: 37px;
   background-color: var(--basic-gray);
 }
 
-.filters {
-  width: 260px;
-  margin-right: 140px;
-}
+
 
 .filters-cost {
   font-weight: bold;
@@ -921,6 +919,7 @@ margin-bottom: 37px;
   line-height: 30px;
   align-items: center;
   text-transform: uppercase;
+  margin-right: 140px;
 }
 
 .range-filter {
