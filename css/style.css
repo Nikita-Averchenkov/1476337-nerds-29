@@ -29,7 +29,7 @@
   --special-input-border: #D7DCDE;
   --special-blue-blue: #283136;
   --special-checkbox: #4d4d4d;
-  --grey-bg-01: rgba(0, 0, 0, 0.1);
+  --special-top-panel: rgba(0, 0, 0, 0.1);
   --special-box-shadow: rgba(0, 1, 1, 0.1);
 }
 
@@ -1215,9 +1215,9 @@ margin-bottom: 37px;
 
 
 .shop-item img {
-  border-left: 1px solid var(--grey-bg-01);
-  border-right: 1px solid var(--grey-bg-01);
-  border-bottom: 1px solid var(--grey-bg-01);
+  border-left: 1px solid var(--special-top-panel);
+  border-right: 1px solid var(--special-top-panel);
+  border-bottom: 1px solid var(--special-top-panel);
   border-radius:  0px 0px 5px 5px;
 }
 
