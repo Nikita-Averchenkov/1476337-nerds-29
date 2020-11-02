@@ -6,12 +6,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body class="page-body">
 
 <header class="main-header">
+
   <div class="container">
     <a class="main-header-logo" href="index.html">
       <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип Nёrd's">
@@ -28,12 +28,13 @@
       </div>
     </nav>
   </div>
+
 </header>
 
 <main>
+
   <h1 class="poster">Магазин готовых шаблонов</h1>
   <div class="container catalog">
-
     <div class="filters-cost">
       <p>стоимость:</p>
       <h2 class="visually-hidden">Фильтр Стоимости</h2>
@@ -48,7 +49,6 @@
                 <div class="toggle toggle-min" tabindex="0"></div>
                 <div class="toggle toggle-max" tabindex="0"></div>
               </div>
-
               <div class="price-controls">
                 <label class="min-price">
                   от <input type="text" name="min-price" value="0">
@@ -61,6 +61,7 @@
           </fieldset>
         </form>
       </div>
+
       <div class="filters-adaptiv">
         <p>сетка:</p>
         <h2 class="visually-hidden">Фильтр Сетки</h2>
@@ -83,12 +84,12 @@
           </ul>
         </fieldset>
       </div>
+
       <div class="filters-features">
         <p>особенности:</p>
         <h2 class="visually-hidden">Фильтр Сетки</h2>
         <fieldset class="filter-features">
           <legend>Особенности:</legend>
-
           <ul class="no-list">
             <li class="filter-option">
               <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="slider"
@@ -100,8 +101,7 @@
               <label for="advantages">Блок преимуществ</label>
             </li>
             <li class="filter-option">
-              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="news"
-                     checked>
+              <input class="visually-hidden filter-features-checkbox" type="checkbox" name="features" id="news" checked>
               <label for="news">Новости</label>
             </li>
             <li class="filter-option">
@@ -113,32 +113,29 @@
               <label for="basket">Корзина</label>
             </li>
           </ul>
+          <a class="button-show" href="#">Показать</a>
         </fieldset>
       </div>
-      <div>
-        <a class="button-show" href="#">Показать</a>
-      </div>
     </div>
+
     <div class="result">
       <div class="sort">
         <p class="sort-item">сортировать:</p>
-        <ul class="sort-list no-list">
-          <li><a class="button-sort" href="#">по цене</a></li>
-          <li><a class="button-item1" href="#"> по типу</a></li>
-          <li><a class="button-item2" href="#">по названию</a></li>
+        <ul class="filtration-list no-list">
+          <li><a class="button-filter" href="#">по цене</a></li>
+          <li><a class="button-filter1" href="#"> по типу</a></li>
+          <li><a class="button-filter2" href="#">по названию</a></li>
         </ul>
-        <ul class="sort-list icon no-list">
+        <ul class="filtration-list no-list">
           <li><a class="button-down" href="#"></a></li>
           <li><a class="button-up" href="#"></a></li>
         </ul>
       </div>
 
       <h2 class="visually-hidden">Список Магазинов</h2>
-      <section class="catalog-shop">
       <ul class="shop no-list">
-        <li>
-          <div class="shop-item">
-            <div class="img-top-panel"></div>
+        <li class="shop-item">
+          <div class="img-top-panel"></div>
           <figure class="no-list">
             <img src="img/img-sedona1.png" width="358" height="578" alt="sedona">
           </figure>
@@ -149,85 +146,74 @@
             <p class="block-list">Информационный сайт для туристов</p>
             <a class="button-block-shop" href="#">9 990 ₽</a>
           </div>
+        </li>
+        <li class="shop-item">
+          <div class="img-top-panel"></div>
+          <figure class="no-list">
+            <img src="img/img-pink1.png" width="358" height="578" alt="pink">
+          </figure>
+          <div class="block">
+            <a class="button-block" href="#">
+              <h2>Pink app</h2>
+            </a>
+            <p class="block-list">Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="button-block-shop" href="#">9 990 ₽</a>
           </div>
         </li>
-        <li>
-          <div class="shop-item">
-            <div class="img-top-panel"></div>
-            <figure class="no-list">
-              <img src="img/img-pink1.png" width="358" height="578" alt="pink">
-            </figure>
-            <div class="block">
-              <a class="button-block" href="#">
-                <h2>Pink app</h2>
-              </a>
-              <p class="block-list">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="button-block-shop" href="#">9 990 ₽</a>
-            </div>
+        <li class="shop-item">
+          <div class="img-top-panel"></div>
+          <figure class="no-list">
+            <img src="img/img-barbershop1.png" width="358" height="578" alt="barbershop">
+          </figure>
+          <div class="block">
+            <a class="button-block" href="#">
+              <h2>Barbershop</h2>
+            </a>
+            <p class="block-list">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="button-block-shop" href="#">9 990 ₽</a>
           </div>
         </li>
-        <li>
-          <div class="shop-item">
-            <div class="img-top-panel"></div>
-            <figure class="no-list">
-              <img src="img/img-barbershop1.png" width="358" height="578" alt="barbershop">
-            </figure>
-            <div class="block">
-              <a class="button-block" href="#">
-                <h2>Barbershop</h2>
-              </a>
-              <p class="block-list">Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button-block-shop" href="#">9 990 ₽</a>
-            </div>
+        <li class="shop-item">
+          <div class="img-top-panel"></div>
+          <figure class="no-list">
+            <img src="img/img-mishka1.png" width="358" height="578" alt="mishka">
+          </figure>
+          <div class="block">
+            <a class="button-block" href="#">
+              <h2>Mishka</h2>
+            </a>
+            <p class="block-list">Интернет-магазин вязаных игрушек</p>
+            <a class="button-block-shop" href="#">9 990 ₽</a>
           </div>
         </li>
-        <li>
-          <div class="shop-item">
-            <div class="img-top-panel"></div>
-            <figure class="no-list">
-              <img src="img/img-mishka1.png" width="358" height="578" alt="mishka">
-            </figure>
-            <div class="block">
-              <a class="button-block" href="#">
-                <h2>Mishka</h2>
-              </a>
-              <p class="block-list">Интернет-магазин вязаных игрушек</p>
-              <a class="button-block-shop" href="#">9 990 ₽</a>
-            </div>
+        <li class="shop-item">
+          <div class="img-top-panel"></div>
+          <figure class="no-list">
+            <img src="img/img-aplus1.png" width="358" height="578" alt="aplus">
+          </figure>
+          <div class="block">
+            <a class="button-block" href="#">
+              <h2>A plus</h2>
+            </a>
+            <p class="block-list">Лендинг курсов повышения квалификации</p>
+            <a class="button-block-shop" href="#">9 990 ₽</a>
           </div>
         </li>
-        <li>
-          <div class="shop-item">
-            <div class="img-top-panel"></div>
-            <figure class="no-list">
-              <img src="img/img-aplus1.png" width="358" height="578" alt="aplus">
-            </figure>
-            <div class="block">
-              <a class="button-block" href="#">
-                <h2>A plus</h2>
-              </a>
-              <p class="block-list">Лендинг курсов повышения квалификации</p>
-              <a class="button-block-shop" href="#">9 990 ₽</a>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="shop-item">
-            <div class="img-top-panel"></div>
-            <figure class="no-list">
-              <img src="img/img-kvast1.png" width="358" height="578" alt="kvast">
-            </figure>
-            <div class="block">
-              <a class="button-block" href="#">
-                <h2>Кваст</h2>
-              </a>
-              <p class="block-list">Промо-сайт производителя крафтового кваса</p>
-              <a class="button-block-shop" href="#">9 990 ₽</a>
-            </div>
+        <li class="shop-item">
+          <div class="img-top-panel"></div>
+          <figure class="no-list">
+            <img src="img/img-kvast1.png" width="358" height="578" alt="kvast">
+          </figure>
+          <div class="block">
+            <a class="button-block" href="#">
+              <h2>Кваст</h2>
+            </a>
+            <p class="block-list">Промо-сайт производителя крафтового кваса</p>
+            <a class="button-block-shop" href="#">9 990 ₽</a>
           </div>
         </li>
       </ul>
-      </section>
+
       <ul class="pagination no-list">
         <li><a class="pagination-item pagination-item-current">1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
@@ -236,26 +222,25 @@
       </ul>
     </div>
   </div>
+
+  <div class="map no-list">
+    <div class="footer-contact">
+      <h3 class="contact-title">nёrds desing studio</h3>
+      <p class="contact-street">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br></p>
+      <p class="contact-tel"> тел. +7 (812) 275-75-75 </p>
+      <button class="button-contact border-clear" type="button">Напишите нам</button>
+    </div>
+  </div>
 </main>
 
 <footer class="page-footer main-footer">
-    <div class="map no-list">
-
-        <div class="footer-contact">
-          <h3 class="contact-title">nёrds desing studio</h3>
-          <p class="contact-street">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br></p>
-          <p class="contact-tel"> тел. +7 (812) 275-75-75 </p>
-          <a class="button" href="#">Напишите нам</a>
-        </div>
-    </div>
-
-      <div class="container social-footer">
-        <ul class="footer-social no-list">
-          <li>
-            <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">
-              <span class="visually-hidden">Vk</span>
-              <svg role="img" aria-label="Логотип Вконтакте" width="27" height="15" viewBox="0 0 27 15">
-                <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621
+  <div class="container social-footer">
+    <ul class="footer-social no-list">
+      <li>
+        <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">
+          <span class="visually-hidden">Vk</span>
+          <svg role="img" aria-label="Логотип Вконтакте" width="27" height="15" viewBox="0 0 27 15">
+            <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621
                         14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821
                         14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193
                         10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004
@@ -277,36 +262,36 @@
                         8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725
                         14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38
                         15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="https://www.facebook.com/" target="_blank">
-              <span class="visually-hidden">Facebook</span>
-              <svg role="img" aria-label="Логотип Фэйсбук" width="12" height="22" viewBox="0 0 12 22">
-                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="https://www.instagram.com/htmlacademy/" target="_blank">
-              <span class="visually-hidden">Instagram</span>
-              <svg role="img" aria-label="Логотип Инстаграм" width="21" height="21" viewBox="0 0 21 21">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="https://www.facebook.com/" target="_blank">
+          <span class="visually-hidden">Facebook</span>
+          <svg role="img" aria-label="Логотип Фэйсбук" width="12" height="22" viewBox="0 0 12 22">
+            <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a class="social-button" href="https://www.instagram.com/htmlacademy/" target="_blank">
+          <span class="visually-hidden">Instagram</span>
+          <svg role="img" aria-label="Логотип Инстаграм" width="21" height="21" viewBox="0 0 21 21">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21
                         19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43
                         7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3
                         18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899
                         17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
-                      fill="white"/>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <div class="container footer-friends">
-          <h3> Давайте дружить, это выгодно! </h3>
-          <span>Скидка 10% для друзей из социальных сетей.</span>
-        </div>
-      </div>
+                  fill="white"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="container footer-friends">
+      <h3> Давайте дружить, это выгодно! </h3>
+      <span>Скидка 10% для друзей из социальных сетей.</span>
+    </div>
+  </div>
 </footer>
 </body>
 </html>
