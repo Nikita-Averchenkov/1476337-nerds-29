@@ -6,11 +6,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 <body class="page-body">
-
 <header class="main-header">
   <div class="container">
     <a class="main-header-logo" href="index.html">
@@ -29,7 +26,6 @@
     </nav>
   </div>
 </header>
-
 <main>
   <section class="slider">
     <div class="container">
@@ -106,7 +102,7 @@
       </div>
       <div class="feature">
         <figure>
-          <img src="img/nerds-illustration1.png" width="360" height="208">
+          <img src="img/nerds-illustration-1.png" width="360" height="208">
         </figure>
         <strong>С 2004 года любим точность во всем:</strong>
         <table class="description">
@@ -139,26 +135,25 @@
           </li>
           <li>
             <a class="button-partners" href="#">
-              <img src="img/logo-2.1.png" width="209" height="90">
+              <img src="img/logo-2-1.png" width="209" height="90">
             </a>
           </li>
           <li>
             <a class="button-partners" href="#">
-              <img src="img/logo-3.1.png" width="185" height="52">
+              <img src="img/logo-3-1.png" width="185" height="52">
             </a>
           </li>
           <li>
             <a class="button-partners" href="#">
-              <img src="img/logo-4.1.png" width="173" height="84">
+              <img src="img/logo-4-1.png" width="173" height="84">
             </a>
           </li>
         </ul>
       </div>
     </section>
   </div>
-
   <div class="map no-list">
-    <div class="footer-contact">
+    <div class="footer-contact container">
       <h3 class="contact-title">nёrds desing studio</h3>
       <p class="contact-street">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br></p>
       <p class="contact-tel"> тел. +7 (812) 275-75-75 </p>
@@ -166,7 +161,6 @@
     </div>
   </div>
 </main>
-
 <footer class="page-footer main-footer">
   <div class="container social-footer">
     <ul class="footer-social no-list">
@@ -227,7 +221,32 @@
     </div>
   </div>
 </footer>
+<div class="modal-content">
+  <div class="form-title">
+    <h2>Напишите нам</h2>
+    <a class="close-bnt border-clear"></a>
+  </div>
+  <form class="modal-form" action="https://echo.htmlacademy.ru/">
+    <div class="form-contact">
+      <div class="form-name">
+        <label for="name">Ваше имя:</label>
+        <input type="text" class="customer-name" name="name" id="name" placeholder="Имя Фамилия"
+               pattern="[A-Za-zА-Яа-яЁё]*?\s[A-Za-zА-Яа-яЁё]*" required>
+      </div>
+      <div class="form-email">
+        <label for="email">Ваш email:</label>
+        <input type="text" class="customer-email" name="email" id="email" placeholder="email@example.com"
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+      </div>
+    </div>
+    <div class="form-letter">
+      <label for="letter">Текст письма:</label>
+      <textarea name="letter" class="customer-text" id="letter" rows="4" placeholder="В свободной форме"
+                required></textarea>
+    </div>
+    <a class="button-send border-clear" type="submit">Отправить</a>
+  </form>
+</div>
+<script src="js/222.js"></script>
 </body>
-
-
 </html>
