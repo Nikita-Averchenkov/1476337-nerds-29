@@ -37,7 +37,7 @@
         <label class="slider-control-item slider-control-item--2" for="product-2">second</label>
         <label class="slider-control-item slider-control-item--3" for="product-3">third</label>
       </div>
-      <ul class="slider-list">
+      <ul class="slider-list no-list">
         <li class="slider-item">
           <h3>Долго, дорого, скрупулезно.</h3>
           <p>Математически выверенный дизайн<br/> для вашего сайта или мобильного приложения.</p>
@@ -72,7 +72,7 @@
             <img src="img/illustration-2.png" width="300" height="146">
           </figure>
           <h2>Приложения</h2>
-          <p>Покорите том-10 приложений в AppStore и Google Play</p>
+          <p>Покорите топ-10 приложений<br> в AppStore и Google Play</p>
           <a class="button-green" href="#">Заказать</a>
         </li>
         <li class="service-list-item">
@@ -89,31 +89,32 @@
   <div class="container">
     <section class="company borders">
       <div class="advantages">
-        <h2>Мы - маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
+        <h2>Мы — маленькая, но гордая<br> дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше
           креатива. Работаем не
           покладая рук, как роботы.</p>
         <h3>Выполняем заказы на разработку:</h3>
-        <ul class="advantages-list">
+        <ul class="advantages-list no-list">
           <li class="advantages-item">Веб-сайтов любой сложности</li>
-          <li class="advantages-item">Мобильны приложений для iOS и Android</li>
+          <li class="advantages-item">Мобильных приложений для iOS и Android</li>
           <li class="advantages-item">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
       </div>
       <div class="feature">
-        <figure>
+        <figure class="no-list">
           <img src="img/nerds-illustration-1.png" width="360" height="208">
         </figure>
         <strong>С 2004 года любим точность во всем:</strong>
+        <div>
         <table class="description">
           <tr>
-            <td class="interest">146
+            <td class="interest-146">146
               <sup class="interest-item">%</sup>
             </td>
-            <td class="interest">100
+            <td class="interest-100">100
               <sup class="interest-item">%</sup>
             </td>
-            <td class="interest">50
+            <td class="interest-50">50
               <sup class="interest-item">%</sup>
             </td>
           </tr>
@@ -123,6 +124,7 @@
             <td class="property">Минимальная<br> предоплата</td>
           </tr>
         </table>
+        </div>
       </div>
     </section>
     <section class="partners-container">
@@ -130,7 +132,7 @@
         <ul class="partners-list no-list">
           <li>
             <a class="button-partners" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/htmlacademy.svg" width="200" height="68"/>
+              <img src="img/htmlacademy.svg" width="199" height="68"/>
             </a>
           </li>
           <li>
@@ -152,18 +154,21 @@
       </div>
     </section>
   </div>
-  <div class="map no-list">
-    <div class="footer-contact container">
-      <h3 class="contact-title">nёrds desing studio</h3>
+  <section class="map no-list">
+    <iframe
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d5fa09f30dceb3377720a2b43fd7164d630de0ff4db931ed2d2c14901fbc41a&amp"
+      frameborder="0"></iframe>
+    <div class="container contact">
+      <h3 class="contact-title">nёrds design studio</h3>
       <p class="contact-street">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br></p>
       <p class="contact-tel"> тел. +7 (812) 275-75-75 </p>
       <button class="button-contact border-clear" type="button">Напишите нам</button>
     </div>
-  </div>
+  </section>
 </main>
 <footer class="page-footer main-footer">
   <div class="container social-footer">
-    <ul class="footer-social no-list">
+    <ul class="footer-social no-style">
       <li>
         <a class="social-button" href="https://vk.com/htmlacademy" target="_blank">
           <span class="visually-hidden">Vk</span>
@@ -217,7 +222,7 @@
     </ul>
     <div class="container footer-friends">
       <h3> Давайте дружить, это выгодно! </h3>
-      <span>Скидка 10% для друзей из социальных сетей.</span>
+      <a>Скидка 10% для друзей из социальных сетей.</a>
     </div>
   </div>
 </footer>
