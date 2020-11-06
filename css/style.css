@@ -11,6 +11,8 @@
   --basic-extra-gray: #666666;
   --basic-extra-black: #444444;
   --basic-extra-white: #dbdbdb;
+  --basic-grey-up: #a6a6a6;
+  --basic-gray-down: #231f20;
 
   --special-red--hover: #e74246;
   --special-red--active: #d7373b;
@@ -79,7 +81,7 @@ img {
 .catalog .pagination {
   grid-column: 1 / -1;
   padding-bottom: 72px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 /*Main navigation*/
@@ -105,7 +107,6 @@ img {
 }
 
 .site-navigation a {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -195,7 +196,7 @@ img {
   opacity: 0.3;
 }
 
-.Poster {
+.poster {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
@@ -582,7 +583,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 37px;
 }
 
-
 .button-partners {
   color: var(--basic-black);
   opacity: 0.2;
@@ -673,10 +673,12 @@ input[type="radio"].visually-hidden {
   display: block;
   align-items: center;
   text-align: center;
-  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   padding: 16px 88px;
   border-radius: 3px;
   margin-top: 51px;
@@ -768,16 +770,17 @@ input[type="radio"].visually-hidden {
   height: 10px;
   top: 26px;
   left: 719px;
+  background-image: url("../img/icon-down-dir-grey.svg");
+  opacity: 0.2;
+}
+
+.button-down:hover::before,
+.button-up:hover::before {
+  opacity: 1;
+}
+
+.button-down:active::before {
   background-image: url("../img/icon-down-dir.svg");
-}
-
-.button-down:hover {
-  color: var(--basic-black);
-  opacity: 0.6;
-}
-
-.button-down:active {
-  color: var(--basic-black);
   opacity: 1;
 }
 
@@ -788,17 +791,12 @@ input[type="radio"].visually-hidden {
   height: 10px;
   top: 26px;
   left: 748px;
-  background-image: url("../img/icon-up-dir.svg");
+  background-image: url("../img/icon-up-dir-grey.svg");
   opacity: 0.2;
 }
 
-.button-up:hover {
-  color: var(--basic-black);
-  opacity: 0.6;
-}
-
-.button-up:active {
-  color: var(--basic-black);
+.button-up:active::before {
+  background-image: url("../img/icon-up-dir.svg");
   opacity: 1;
 }
 
@@ -926,6 +924,9 @@ input[type="radio"].visually-hidden {
   height: 416px;
   border: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .map iframe {
@@ -934,23 +935,12 @@ input[type="radio"].visually-hidden {
   border: 0;
 }
 
-.map::before {
-  content: "";
-  position: absolute;
-  width: 231px;
-  height: 190px;
-  top: 86px;
-  left: 1054px;
-  background-image: url("../img/map-marker.png");
-  background-repeat: no-repeat;
-}
-
 .contact {
   position: absolute;
   width: 319px;
   height: 308px;
-  left: 352px;
-  top: 54px;
+  left: 372px;
+  top: 55px;
   background-color: var(--basic-white);
 }
 
@@ -958,7 +948,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 23px;
-  padding-left: 60px;
+  padding-left: 50px;
   padding-top: 30px;
   text-transform: uppercase;
 }
@@ -967,13 +957,13 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  padding-left: 60px;
+  padding-left: 50px;
   color: var(--basic-extra-gray);
 }
 
 .contact-tel {
   margin-bottom: 34px;
-  padding-left: 60px;
+  padding-left: 50px;
   color: var(--basic-extra-gray);
 
 }
@@ -982,7 +972,7 @@ input[type="radio"].visually-hidden {
   width: 219px;
   height: 50px;
   padding: 16px 44px;
-  margin-left: 60px;
+  margin-left: 50px;
   font: inherit;
   align-items: center;
   color: var(--basic-white);
@@ -1015,14 +1005,16 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 66px;
+  padding-top: 0px;
   padding-left: 3px;
+  padding-bottom: 12px;
 }
 
 .footer-friends {
   width: 760px;
   padding-left: 141px;
   padding-top: 31px;
+  padding-bottom: 80px;
 }
 
 .footer-friends h3 {
@@ -1070,6 +1062,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-cost {
+  margin-right: 140px;
+}
+
+.filters-cost p {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -1168,11 +1166,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-adaptiv {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  align-items: center;
-  text-transform: uppercase;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .filter-grid {
@@ -1249,11 +1247,11 @@ input[type="radio"].visually-hidden {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  left: -35px;
-  top: -2px;
+  left: -31px;
+  top: 2px;
   width: 16px;
   height: 16px;
-  border: 4px solid var(--special-checkbox);
+  background-color: var(--special-checkbox);
   border-radius: 100%;
   box-shadow: inset 0 0 0 4px var(--basic-white);
   opacity: 0.4;
@@ -1271,7 +1269,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--special-checkbox);
 }
 
-.filters-features {
+.filters-features legend {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -1279,6 +1277,14 @@ input[type="radio"].visually-hidden {
   padding-top: 1px;
   margin-left: -1px;
   text-transform: uppercase;
+}
+
+.filters-features label {
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
 }
 
 .filter-features-checkbox + label::before {
@@ -1327,6 +1333,7 @@ input[type="radio"].visually-hidden {
 
 .sort-item {
   margin-right: 266px;
+  margin-bottom: 48px;
 }
 
 .sort-list {
@@ -1336,6 +1343,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   align-items: center;
   text-transform: uppercase;
+  padding-bottom: 33px;
 }
 
 .filtration-list {
@@ -1393,20 +1401,12 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.sedona {
-  margin-top: 32px;
-}
-
-.pink {
-  margin-top: 32px;
-}
-
 .barbershop {
   margin-top: 25px;
 }
 
 .mishka {
-  margin-top: 23px;
+  margin-top: 26px;
 }
 
 .aplus {
@@ -1422,12 +1422,15 @@ input[type="radio"].visually-hidden {
   flex-direction: column;
   align-items: center;
   position: absolute;
+  top: 386px;
   width: 360px;
   height: 231px;
   background-color: var(--basic-gray);
   bottom: 0px;
   border-radius: 0px 0px 3px 3px;
   opacity: 0;
+  padding: 26px;
+  box-sizing: border-box;
 }
 
 .shop-item:hover .block,
@@ -1443,7 +1446,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 21px;
+  margin-top: 1px;
 }
 
 .block-list {
