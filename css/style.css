@@ -264,7 +264,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   width: 18px;
   height: 18px;
-  background: #ffffff;
+  background: var(--basic-white);
   border-radius: 50%;
 }
 
@@ -384,12 +384,7 @@ input[type="radio"].visually-hidden {
 .service-list-item {
   width: 300px;
   margin-right: 60px;
-  margin-bottom: 56px;
-}
-
-.service-list-item a {
-  display: inline-block;
-  margin-bottom: 25px;
+  margin-bottom: 80px;
 }
 
 .service figure {
@@ -434,7 +429,7 @@ input[type="radio"].visually-hidden {
 
 .advantages {
   width: 651px;
-  padding-top: 36px;
+  padding-top: 37px;
   margin-bottom: 49px;
 }
 
@@ -483,7 +478,7 @@ input[type="radio"].visually-hidden {
 .feature {
 
   height: 412px;
-  margin-bottom: 39px;
+  margin-bottom: 36px;
 }
 
 .feature img {
@@ -512,7 +507,7 @@ input[type="radio"].visually-hidden {
   line-height: 64px;
   font-weight: 700;
   padding-right: 39px;
-  padding-top: 29px;
+  padding-top: 27px;
   padding-bottom: 10px;
   position: relative;
 }
@@ -697,6 +692,7 @@ input[type="radio"].visually-hidden {
   margin-top: 51px;
   color: var(--basic-black);
   background-color: var(--basic-gray);
+  cursor: pointer;
 }
 
 .button-show:hover {
@@ -994,6 +990,7 @@ input[type="radio"].visually-hidden {
   height: 50px;
   padding: 16px 44px;
   margin-left: 60px;
+  margin-top: 33px;
   font: inherit;
   align-items: center;
   color: var(--basic-white);
@@ -1005,6 +1002,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
+  cursor: pointer;
 }
 
 .button-contact:hover {
@@ -1074,7 +1072,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 55px;
   margin: 0;
-  height: 55px;
+  min-height: 55px;
   padding-top: 76px;
   padding-bottom: 109px;
   margin-bottom: 38px;
