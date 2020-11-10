@@ -214,10 +214,6 @@ img {
   background-color: var(--basic-gray);
 }
 
-.hidden {
-  display: none !important;
-}
-
 .slider {
   position: relative;
   margin-bottom: 73px;
@@ -231,6 +227,10 @@ img {
 
 .slider-item {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .slider-text {
