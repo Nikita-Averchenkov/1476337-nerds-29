@@ -210,142 +210,84 @@ img {
 
 /* Slider */
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.backdrop {
+  background-color: var(--basic-gray);
+}
+
+.hidden {
+  display: none !important;
 }
 
 .slider {
   position: relative;
-  min-height: 431px;
-  margin-bottom: 80px;
-  background-color: var(--basic-gray);
+  margin-bottom: 73px;
+}
+
+.slider-item img {
+  position: relative;
+  left: 397px;
+  top: -1px;
+}
+
+.slider-item {
+  display: flex;
+}
+
+.slider-text {
+  max-width: 538px;
+  position: absolute;
+  z-index: 0;
+}
+
+.slider-text h3 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin: 0;
+  padding-top: 77px;
+}
+
+.slider-text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  width: 415px;
 }
 
 .slider-control {
   position: absolute;
-  left: 50%;
-  bottom: 102px;
-  z-index: 100;
-  width: 109px;
-  height: 18px;
-  text-align: center;
-  padding-right: 7px;
-  font-size: 0;
-  transform: translateX(-50%);
-}
-
-.slider-control label {
-  position: relative;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  padding: 8px;
-  border-radius: 50%;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-.slider-control label::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 12px;
-  z-index: 1;
-  width: 18px;
-  height: 18px;
-  background: var(--basic-white);
-  border-radius: 50%;
-}
-
-.slider-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slider-item {
-  display: none;
-  height: 431px;
-}
-
-.slider-item:nth-child(1) {
-  background-image: url("../img/nerds-index-slide-1.png");
-  background-repeat: no-repeat;
-  background-position: 397px 0px;
-}
-
-.slider-item:nth-child(2) {
-  background-image: url("../img/nerds-index-slide-2.png");
-  background-repeat: no-repeat;
-  background-position: 397px;
-}
-
-.slider-item:nth-child(3) {
-  background-image: url("../img/nerds-index-slide-3.png");
-  background-repeat: no-repeat;
-  background-position: 397px 0px;
-}
-
-.slider-1:checked ~ .slider-list .slider-item:nth-child(1) {
-  display: block;
-}
-
-.slider-2:checked ~ .slider-list .slider-item:nth-child(2) {
-  display: block;
-}
-
-.slider-3:checked ~ .slider-list .slider-item:nth-child(3) {
-  display: block;
-}
-
-.slider-1:checked ~ .slider-control .slider-control-item--1::before,
-.slider-2:checked ~ .slider-control .slider-control-item--2::before,
-.slider-3:checked ~ .slider-control .slider-control-item--3::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 28%;
+  bottom: 104px;
+  left: 546px;
   z-index: 2;
-  width: 8px;
-  height: 8px;
-  background-color: inherit;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+.slider-control button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider-control .current::before {
+  width: 4px;
+  height: 4px;
+  background-color: transparent;
   border: 2px solid var(--special-grey-control);
   border-radius: 50%;
-  box-sizing: border-box;
-}
-
-.slider-item h3 {
-  max-width: 600px;
-  margin: 0;
-  padding-top: 78px;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
-
-.slider-item p {
-  max-width: 430px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: var(--basic-black-p);
-  margin: 0px;
-  padding-top: 26px;
-}
-
-.slider-item:nth-child(2) p {
-  padding-top: 27px;
+  display: inline-block;
+  content: " ";
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .slider-button {
@@ -359,6 +301,7 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
+  cursor: pointer;
   color: var(--basic-white);
   background-color: var(--basic-red);
   border-radius: 3px;
